@@ -1,0 +1,9 @@
+<%= simple_form_for @referrer, url: referrer_index_path do |f| %>
+    <%= f.input :name %>
+    <%= f.input :email, input_html: { autocomplete: 'email' } %>
+    <%= f.input :mob %>
+    <%= f.input :amount %>
+    <%= f.button :submit, class: "btn-primary" %>
+    <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+  <% end %>
+  
